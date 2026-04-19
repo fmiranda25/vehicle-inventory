@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Program {
 
     static Scanner input = new Scanner(System.in);
+    static Vehicle[] vehicles = new Vehicle[20];
 
     public static void main(String[] args) {
 
-        Vehicle[] vehicles = new Vehicle[20];
         vehicles[0] = new Vehicle(101121, "Ford Explorer", "Red", 45000, 13500);
         vehicles[1] = new Vehicle(101122, "Toyota Camry", "Blue", 60000, 11000);
         vehicles[2] = new Vehicle(101123, "Chevrolet Malibu", "Black", 50000, 9700);
@@ -36,7 +36,7 @@ public class Program {
             int command = input.nextInt();
             switch (command) {
                 case 1:
-                    listAllVehicles(vehicles);
+                    listAllVehicles();
                     break;
                 case 2:
                     findVehiclesByMakeModel();
@@ -61,7 +61,7 @@ public class Program {
     }
     public static void listAllVehicles (Vehicle[] vehicles) {
         for (int index = 0; index <= vehicles.length; index++) {
-            if (vehicle != null) {
+            if (vehicles != null) {
 
             }
         }
